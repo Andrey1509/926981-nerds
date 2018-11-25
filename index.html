@@ -26,8 +26,10 @@
   
   <main class="container">
   	<h2>Долго,дорого,скурпулезно.</h2>
+  	<p>Математически выверенный дизайн для вашего сайти или мобильного приложения</p>
+  	<a href="#" class="button">Узнать больше</a>
   	<section class="catalog">
-  	<h2 class="Types-of-services">Виды услуг</h2>
+  	<h2 class="visually-hidden">Виды услуг</h2>
   	<ul class="catalog-list">
   		<li class="catalog-item">
   			<img src="img/illustration-1.png" width="300" height="146">
@@ -84,7 +86,20 @@
      <br>
      тел. +7(812) 275-75-75<br>
  </p>
-     <a class="button" href="#">Напишите нам</a>
+ 
+      <button class="button">Напишите нам</button>
+     <form class="appointment-form" action="#" method="post">
+     	<label for="appointment-name">Ваше имя:</label>
+     	<input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+     	<label for="appointment-mail">Ваше E-mail:</label>
+     	<input id="appointment-mail" type="text" name="e-mail" placeholder="email@example.com">
+     	<label for="appointment-text">Текст писма:</label>
+     	<input id="appointment-text" type="text" name="massadge" placeholder="В свободной форме">
+     	<button class="button" type="submit">Отправить</button>
+     	<button class="madal-close" type="button">
+     		<img src="img/close-cross.png">
+     	</button>
+     </form>
 
   	<ul class="footer-social">
   		<li><a class="social-button" href="#">
