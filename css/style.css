@@ -1,0 +1,126 @@
+body{
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto;
+	background-color: #ffffff;
+	background-position: top; center;
+	background-repeat: no-repeat;
+}
+a{
+	text-decoration: none;
+	list-style: none;
+}
+.main-navigation{
+	font-size: 17.5px
+	line-height: 1.8;
+	color: #ffffff;
+
+	background-color: #e1e1e1;
+}
+.user-basket,
+.site-navigation{
+	list-style: none;
+}
+.site-navigation a,
+.user-basket a{
+	color: #000000
+}
+.site-navigation a:hover,
+.site-navigationa a:focus,
+.user-basket a:hover,
+.user-basket a:focus{
+	background-color: #fb565a;
+}
+.catalog-list{
+	list-style: none;
+}
+.catalog-item{
+	text-align: center;
+}
+.catalog-item h3{
+	font-size: 24.5px;
+	line-height: 1.29;
+}
+.form{
+	color: #ffffff;
+
+	background-color: #000000;
+	background-position:0 0;
+	background-repeat: no-repeat;
+}
+.modal b{
+	font-size: 45px;
+	line-height: 1;
+}
+.appointment-form{
+	width: 960px;
+	height: 590px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 2px solid #e1e1e1;
+}
+ .appointment-name input:focus {
+ border-color: #e1e1e1;
+ width: 360px;
+ height: 50px;
+}
+.appointment-mail input:focus {
+	border-color: #e1e1e1;
+	width: 360px;
+	height: 50px;
+}
+.appointment-text input:focus{
+	border-color: #e1e1e1;
+	width: 760px;
+	height: 118px;
+}
+.footer-social{
+	text-align: left;
+}
+.footer-social ul{
+	list-style: none;
+}
+.social-button{
+	color: #e1e1e1;
+}
+.footer-social b{
+	font-size: 35px;
+	line-height: 1;
+}
+p{
+	font-size: 16px;
+	line-height: 1.38;
+	color: #444444;
+}
+/*каталог*/ 
+.filter fieldset{
+	border:none;
+}
+.filter legend{
+	font-size: 16px;
+	line-height: 1.25;
+}
+.filter ul{
+	font-size: 20px;
+	list-style: none;
+}
+.catalog-list{
+	list-style: none;
+}
+
+.catalog-item{
+	background-color: #f8f8f8;
+	box-shadow: 0 0 10px
+	rgba(0,1,1, 0.25)
+}
+.catalog-item h3{
+	width: 17.5;
+	line-height: 1.8;
+}
+.catalog-item-price button{
+width:  200px;
+height: 50px;
+text-align:center;
+background-color: #fb565a
+}
