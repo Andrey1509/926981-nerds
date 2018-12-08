@@ -1,6 +1,6 @@
 body{
-	margin: 0;
-	padding: 0;
+	margin: 0 ;
+	padding: 0 ;
 	min-width: 1200px;
 	text-transform: uppercase;
 
@@ -10,7 +10,7 @@ body{
 	font-family: Roboto;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400;
+	font-weight: 500;
 	background-color: #00000;
 	background-position: top; center;
 	background-repeat: no-repeat;
@@ -20,9 +20,7 @@ a{
 	text-decoration: none;
 	list-style: none;
 }
-.main-header{
-	background-color: #eeeeee;
-}
+
 
 .main-navigation{
 	color: #ffffff;
@@ -45,19 +43,22 @@ a{
 .site-navigationa a:focus,
 .user-basket a:hover,
 .user-basket a:focus{
-	background-color: #fb565a;
+	color: #fb565a;
 }
 
-}
 /*виды услуг на главной*/
+.index-main{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 .faetures{
 	list-style: none;
+	padding-top: 80px;
+
 }
 .features-list {
 		padding-top: 80px;
-		padding-left: 140px;
-		padding-right: 200px;
-		padding-bottom: 80px;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -155,19 +156,20 @@ background-color: #eab534;
 /*информация на главной */
 .information{
 	list-style: none;
-	padding-top: 80px;
-	padding-left: 140px;
-	width: 1160px;
+	
 	display: flex;
 	justify-content: space-between;
-	margin: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	padding-top: 80px;
 }
 .main-information{
 	display: flex;
 	flex-direction: column;
 	width: 660px;
 	margin: 0;
-	padding:0;
+	padding: 0;
 
 }
 .main-info{
@@ -175,6 +177,8 @@ background-color: #eab534;
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+	padding-left: 140px;
+
 }
 .main-information b{
 	margin: 0;	
@@ -184,20 +188,44 @@ background-color: #eab534;
 	justify-content: space-between;
 	list-style: none;
 }
-.information-list ul{
+.information-list li{
+	display: flex;
+	flex-direction: column;
 }
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+	.information{
+	display: flex;
+	justify-content: space-around;
+}
+.main-information{
+	display: flex;
+	justify-content: space-around;
+}
+.information-item{
+	display: flex;
+	flex-direction: column;
+}
+
 /*--------*/
 /*подвал */
 .main-footer{
-	margin: 0;
-	padding: 70px; 0;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	padding-top: 80px;
+	padding-bottom: 70px;
+	
 	display: flex;
 }
 .footer-social{ 
 width: 260px;
 margin-right: 140px;
 text-align: center;
-;
+
  }
 
 .footer-social ul{
@@ -240,6 +268,9 @@ text-align: center;
 	height: 79px;
 	border-radius: 39px;
 
+}
+.friends{
+	padding-left: 140px;
 }
 /*--------------*/
 .form{
@@ -317,7 +348,7 @@ p{
 	background-color: #f8f8f8;
 	box-shadow: 0 0 10px
 	rgba(0,1,1, 0.25)
-	padding 100px
+	padding 100px;
 
 }
 .catalog-item h3{
@@ -337,40 +368,48 @@ background-color: #fb565a
 	background-color: #fb565a
 }
 /* Сетка для главной страницы */
+.main-header{
+padding-top: 50px;
+	background-color: #eeeeee;
+}
+.main-navigation{
+	width: 1200px;
+	margin: 0 auto;
+	padding:0 20px;
+}
 .main-header-logo{
-	padding-left: 140px;
-	padding-top: 49px;
+	float: left;
 }
 .site-navigation{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 440px;
+	padding-left: 200px;
 }
 
 .site-navigation a{
 	display: block;
 	padding: 45px ;
-	margin-top: 43px;
+	
 	vertical-align: middle;
 
 }
-
+.user-basket{
+    padding-left: 240px;
+	padding-top: 43px;
+}
 
 .user-basket{
-	margin: 0;
-	padding: 0;
+
 	list-style: none;
-	margin-top: 83px;
-	padding-left: 50px;
 	position: relative;
 }
 .user-basket .basket{
-	padding-left: 50px;
-	position: relative;
 
+	position: relative;
 }
 
 
@@ -380,7 +419,7 @@ background-color: #fb565a
 
 }
 /*приемущества*/
-.containers{
+.container{
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -394,6 +433,7 @@ background-color: #fb565a
 }
 /* слайдер*/
 .slider{
+
 	position: relative;
 
 	background-color: #eeeeee;
@@ -523,17 +563,11 @@ background-color: #e74246;
 }
 /*------------*/
 
-}
-.information{
-	display: flex;
-	justify-content: space-around;
-}
-.main-information{
-	display: flex;
-	justify-content: space-around;
-}
-
 .footer-social{
 display: flex; 
 justify-content: space-between;
+}
+.text{
+	font-size: 16px;
+	color: #444444;
 }
