@@ -163,54 +163,128 @@
   		
   	</section></div>
   	 </main>
-<div class="container">
-<p>
-      <h4><strong>NERDS DESIGN STUDIO</strong></h4>
-     191186,Санкт-Петербург,
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456318989151" width="1440" height="415" allowfullscreen></iframe>
+  <div class="container">
+   
+<div class="massadge-nerds">
+      <h3><strong>NERDS DESIGN STUDIO</strong></h3>
+     <p class="adres">191186,Санкт-Петербург,
      ул.Б.Конюшенная,д.19/8
-     <br>
-     тел. +7(812) 275-75-75<br>
- </p>
-   <button class="button">Напишите нам</button>
-     <section class="modal">
-      <b>Напишите нам</b>
+     <br><br>
+     тел. +7(812) 275-75-75<br></p>
+ 
+   <a href="login.html" class="login-link">Напишите нам</a></div></div>
+
+     <section class="modal modal-login">
+      <h3>Напишите нам</h3>
      <form class="appointment-form" action="#" method="post">
+      <div class="login">
       <p class="appointment-item">
       <label for="appointment-name">Ваше имя:</label>
-      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия"></p>
+      <input id="appointment-name" type="text" name="login" placeholder="Имя Фамилия"></p>
       <p class="appointment-item"><label for="appointment-mail">Ваше E-mail:</label>
-      <input id="appointment-mail" type="text" name="e-mail" placeholder="email@example.com"></p>
+      <input id="appointment-mail" type="text" name="e-mail" placeholder="email@example.com"></p></div>
       <div class="pismo">
       <label for="appointment-text">Текст писма:</label>
-      <input id="appointment-text" type="text" name="massadge" placeholder="В свободной форме">
-      <button class="button" type="submit">Отправить</button></div>
+      <input id="appointment-text" type="text" name="massadge" placeholder="В свободной форме"></div>
+      <button class="button" type="submit">Отправить</button>
       <button class="modal-close" type="button">
-        <img src="img/close-cross.png">
+        
       </button>
      </form>
  </section>
-</div>
 
   <footer class="main-footer">
  <div class="footer-social">
     <ul class="social-but">
       <li><a class="social-button" href="#">
        <span class="visually-hidden">
-      Вконтакте</span><img src="img/vk-icon.png"></a></li>
+      Вконтакте</span><img src="img/vk-icon.png" width="26" height="15"></a></li>
       <li><a class="social-button" href="#">
          <span class="visually-hidden">      
-      Фейсбук</span><img src="img/fb-icon.png"></a></li>
+      Фейсбук</span><img src="img/fb-icon.png" width="12" height="26"></a></li>
       <li><a class="social-button" href="#">
          <span class="visually-hidden">
-      Инстаграм</span><img src="img/insta-icon.png"></a></li>
+      Инстаграм</span><img src="img/insta-icon.png" width="21"
+      height="21"></a></li>
      </ul></div>
      <div class="friends">
-     <b>Давайте дружить,это выгодно!</b>
+     <h1>Давайте дружить, это выгодно!</h1>
      <p class="text">
      Скидка 10% для друзей из социальный сетей.
      </p></div>
 
-</footer>    
+</footer>  
+<script>
+  var link = document.querySelector(".login-link");
+  
+  var popup = document.querySelector(".modal-login");
+  var close = popup.querySelector(".modal-close");
+  
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("[name=login]");
+  var password = popup.querySelector("[name=e-mail]");
+
+
+var isStorageSupport = true;
+  var storage = "";
+  
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+
+
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+
+  if (storage) {
+      login.value = storage;
+      email.focus();
+    } else {
+      login.focus();
+    }
+  });
+  
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+    });
+
+    
+
+    form.addEventListener("submit", function (evt) {
+    if (!login.value || !e-mail.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+   } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+     
+     window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+
+
+
 
 </body>
 </html>
