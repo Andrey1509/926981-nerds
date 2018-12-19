@@ -10,8 +10,8 @@
 <body>
  <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-      <img src="img/nerds-logo.png" width="160" height="65" alt="Nerds">
+      <a class="main-header-logo" href="#">
+      <img class="logo" src="img/nerds-logo.png" width="160" height="65" alt="Nerds">
         </a> 
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
@@ -32,7 +32,7 @@
     <h2 class="visually-hidden">Фильт товаров</h2>
    <form class="filter" method="get" action="#">
    	<fieldset class="filter-item">
-        <legend>Стоимость:</legend>
+        <legend><h3>Стоимость:</h3></legend>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -48,8 +48,8 @@
         </div>
       </fieldset>
    	<fieldset>
-   		<legend>Сетка:</legend>
-   		<ul>
+   		<legend><h3>Сетка:</h3></legend>
+   		<ul class="grid">
    		<li class="filter-option"> 
    			<input class="filter-input filter-input-radio" type="radio" name="class-name" id="adapt"><label for="adapt">Адаптивная</label></li>
    		<li class="filter-option"> 
@@ -59,8 +59,8 @@
    		</ul>
    	</fieldset>
    	<fieldset>
-   		<legend>Особенности:</legend>
-   		<ul>
+   		<legend><h3>Особенности:</h3></legend>
+   		<ul class="specificity">
    			<li class="filter-option">
    				<input class="filter-input filter-input-checkbox" type="checkbox" name="slyder" id="slyder"><label for="slyder">Слайдер</label></li>
    			<li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" name="block" id="block"><label for="block">Блок приемуществ</label></li>
@@ -78,7 +78,30 @@
 
   	</section>
   	<!--!!!!!!!!!!!--->
+  
+
   	<section class="catalog">
+<div class="sort">
+     <div class="sort-list-1">
+       <h3>Сортировать: </h3>
+       <ul class="navigation-list">
+        <li class="btn-short">По цене</li>
+        <li class="btn-short">По типу</li>
+        <li class="btn-short">По названию</li>
+      </ul>
+    </div>
+    <div class="sort-list-2">
+      <a href="#" class="icon"><img src="img/icon-down-dir.png"></a>
+      <a href="#" class="icon"><img src="img/icon-up-dir.png"></a>
+    </div>
+
+
+
+
+   </div>
+
+
+
     <h2 class="visually-hidden">Наши работы</h2>
     <ul class="catalog-list">
     <li class="catalog-item">
@@ -87,10 +110,10 @@
     	<img src="img/sedona.png" width="360" height="576" alt="Sedona"></a>
     
     </p>
-    <h3>Sedona</h3>	
-    <p class="text">Информационный сайт для туристов</p> </a>
+    <h3>SEDONA</h3>	
+    <p class="text">Информационный сайт <br> для туристов</p> </a>
     <p class="catalog-item-price">
-    <button class="button">9 900 РУБ.</button>
+    <button class="button-price">9 900 РУБ.</button>
     </p>
     </li>
     <li class="catalog-item">
@@ -99,10 +122,10 @@
     	<img src="img/pink.png" width="360" height="576" alt="Pink">
   </a>
     </p>
-    <h3>Pink</h3>	
-    <p class="text">Информационный сайт для настроения</p>
+    <h3>PINK APP</h3>	
+    <p class="text">Продуктовый лендинг <br> приложения для iOS и Android</p>
     <p class="catalog-item-price">
-    <button class="button">9 900 РУБ.</button>
+    <button class="button-price">9 900 РУБ.</button>
     </p>
     </li>
     <li class="catalog-item">
@@ -111,10 +134,10 @@
     	<img src="img/barbershop.png" width="360" height="576" alt="Borodinski">
     </a>
     </p>
-    <h3>Borodinski</h3>	
-    <p class="text">Сайт Барбершопа</p>
+    <h3>BARBERSHOP</h3>	
+    <p class="text">Сайт салона красоты.<br>Для мужчин,да.</p>
     <p class="catalog-item-price">
-    <button class="button">9 900 РУБ.</button>
+    <button class="button-price">9 900 РУБ.</button>
     </p>
     </li>
     <li class="catalog-item">
@@ -123,10 +146,10 @@
     	<img src="img/mishka.png" width="360" height="576" alt="Mishka">
     </a>
     </p>
-    <h3>Mishka</h3>	
-    <p class="text">Милые штучки ручной работы для дома</p>
+    <h3>MISHKA</h3>	
+    <p class="text">Интернет-магазин<br>вязаных игрушек</p>
     <p class="catalog-item-price">
-    <button class="button">9 900 РУБ.</button>
+    <button class="button-price">9 900 РУБ.</button>
     </p>
     </li>
     <li class="catalog-item">
@@ -135,10 +158,10 @@
     	<img src="img/plus.png" width="360" height="576" alt="Учеба">
     </a>
     </p>
-    <h3>Учеба</h3>	
-    <p class="text">Сайт для учебы</p>
+    <h3>A PLUS</h3>	
+    <p class="text">Лендинг курсов повышенрия<br>квалификации</p>
     <p class="catalog-item-price">
-    <button class="button">9 900 РУБ.</button>
+    <button class="button-price">9 900 РУБ.</button>
     </p>
     </li>
     <li class="catalog-item">
@@ -147,18 +170,18 @@
     	<img src="img/kvast.png" width="360" height="576" alt="Кваст">
     </a>
     </p>
-    <h3>Кваст</h3>	
-    <p class="text">Сайт домашнего кваса</p>
+    <h3>КВАСТ</h3>	
+    <p class="text">Промо-сайт производителя<br>крафтового кваса</p>
     <p class="catalog-item-price">
-    <button class="button">9 900 РУБ.</button>
+    <button class="button-price">9 900 РУБ.</button>
     </p>
     </li>
     </ul> 
     <ul class="pagination-list">
-    <li class="pagination-item" pagination-item-current><a>1</a></li>
+    <li class="pagination-item pagination-item-current"><a>1</a></li>
     <li class="pagination-item"><a href="#">2</a></li>
     <li class="pagination-item"><a href="#">3</a></li>
-    <li class="pagination-btn" button>Следущая</li>	
+    <li class="pagination-item"> <button class="pagination-btn"><strong>Следущая</strong></button></li>	
     </ul> 
   		
   	</section></div>
