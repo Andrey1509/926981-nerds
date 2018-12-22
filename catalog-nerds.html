@@ -10,20 +10,20 @@
 <body>
  <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="#">
+      <a class="main-header-logo" href="index.html">
       <img class="logo" src="img/nerds-logo.png" width="160" height="65" alt="Nerds">
         </a> 
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a class="active-link disabled" href="#">Магазин</a></li>
         <li><a href="#">Контакты </a></li>
       </ul>
       <div class="user-basket"> <a class="basket" href="#"><img src="img/cart-icon.png" width="15" height="15" alt="basket"> Корзина</a>
       </div>
       </nav>
       <span class="glav">
-<h1><strong>Магазин готовых шаблонов</strong></h1>
+<p><strong>Магазин готовых шаблонов</strong></p>
   </span>
   </header>
   <main class="container">
@@ -32,7 +32,7 @@
     <h2 class="visually-hidden">Фильт товаров</h2>
    <form class="filter" method="get" action="#">
    	<fieldset class="filter-item">
-        <legend><p>Стоимость:</p></legend>
+        <legend>Стоимость:</legend>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -47,8 +47,8 @@
           </div>
         </div>
       </fieldset>
-   	<fieldset>
-   		<legend><p>Сетка:</p></legend>
+   	<fieldset class="features-select">
+   		<legend>Сетка:</legend>
    		<ul class="grid">
    		<li class="filter-option"> 
    			<input class="filter-input filter-input-radio" type="radio" name="class-name" id="adapt"><label for="adapt">Адаптивная</label></li>
@@ -58,8 +58,8 @@
    			<input class="filter-input filter-input-radio" type="radio" name="class-name" id="rez"><label for="rez">Резиновая</label></li>
    		</ul>
    	</fieldset>
-   	<fieldset>
-   		<legend><p>Особенности:</p></legend>
+   	<fieldset class="features-select2">
+   		<legend>Особенности:</legend>
    		<ul class="specificity">
    			<li class="filter-option">
    				<input class="filter-input filter-input-checkbox" type="checkbox" name="slyder" id="slyder"><label for="slyder">Слайдер</label></li>
@@ -98,6 +98,11 @@
     <h2 class="visually-hidden">Наши работы</h2>
     <ul class="catalog-list">
     <li class="catalog-item">
+      <div class="catalog-item-slider">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
     <p>
     	<a href="#" class="catalog-item.html">
     	<img src="img/sedona.png" width="360" height="576" alt="Sedona"></a>
@@ -110,6 +115,12 @@
     </p>
     </li>
     <li class="catalog-item">
+ <div class="catalog-item-slider">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+
     <p>
     	<a href="#" class="catalog-item.html">
     	<img src="img/pink.png" width="360" height="576" alt="Pink">
@@ -122,6 +133,11 @@
     </p>
     </li>
     <li class="catalog-item">
+       <div class="catalog-item-slider">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
     <p>
     	<a href="#" class="catalog-item.html">
     	<img src="img/barbershop.png" width="360" height="576" alt="Borodinski">
@@ -134,6 +150,11 @@
     </p>
     </li>
     <li class="catalog-item">
+       <div class="catalog-item-slider">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
     <p>
     	<a href="#" class="catalog-item.html">
     	<img src="img/mishka.png" width="360" height="576" alt="Mishka">
@@ -146,6 +167,11 @@
     </p>
     </li>
     <li class="catalog-item">
+       <div class="catalog-item-slider">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
     <p>
     	<a href="#" class="catalog-item.html">
     	<img src="img/plus.png" width="360" height="576" alt="Учеба">
@@ -158,6 +184,11 @@
     </p>
     </li>
     <li class="catalog-item">
+       <div class="catalog-item-slider">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
     <p>
     	<a href="#" class="catalog-item.html">
     	<img src="img/kvast.png" width="360" height="576" alt="Кваст">
@@ -213,7 +244,7 @@
       </button>
      </form>
  </section>
-</div>
+
 <footer class="main-footer">
  <div class="footer-social">
     <ul class="social-but">

@@ -535,12 +535,18 @@ background-color: #e1e1e1;
 
 	padding-left: 0;
 }
+.specificity li{
+	margin-bottom: 10px;
+}
 .grid{
 	padding-left: 0;
 }
-
-
-
+.grid li{
+	margin-bottom: 10px;
+}
+.filter-option label{
+	padding-left: 10px;
+}
 
 .catalog-item-price button{
 width:  200px;
@@ -637,6 +643,8 @@ background-color: #e1e1e1;
 .sort{
 	display: flex;
 	justify-content: space-between;
+	margin-top: -25px;
+	padding-bottom: 25px;
 }
 
 .sort-list-1{
@@ -813,6 +821,43 @@ position: relative;
 	font-size: 0;
 	transform: translateX(-50%);
 }
+
+.catalog-item-slider {
+	width: 360px;
+	height: 40px;
+	background-color: #eeeeee;
+	position: absolute;
+
+
+}
+.catalog-item-slider i{
+		 position: relative;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding: 2px;
+
+	border-radius: 50%;
+	cursor: pointer;
+
+
+}
+.catalog-item-slider i::after{
+	content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+     
+
+	width: 15px;
+	height: 15px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+.catalog-item img{
+	margin-top: 25px;
+}
+
 .slider-controls .active::before{
 	content: "";
 	  position: absolute;
@@ -1062,7 +1107,28 @@ padding-right: 100px;
 	margin-right: 100px;
 	margin-left: 100px;
 	padding: 0;
-	
+
+}
+
+
+.appointment-form input[ id=appointment-text]:hover {
+	border-color: #eeeeee;
+}
+.appointment-form input[ id=appointment-text]:focus {
+	border-color: #000000;
+	border-style: solid;
+}
+.appointment-form input[ id=appointment-name]:hover {
+	border-color: #eeeeee;
+}
+.appointment-form input[ id=appointment-name]:focus {
+	border-color: #000000;
+}
+.appointment-form input[ id=appointment-mail]:hover {
+	border-color: #eeeeee;
+}
+.appointment-form input[ id=appointment-mail]:focus {
+	border-color: #000000;
 }
 
 .pismo{
@@ -1228,4 +1294,45 @@ opacity: 1;
 }
 .icon:focus {
 	opacity: 1;
+}
+/*---------------------*/
+.glav p{
+	font-size: 54px;
+font-weight: 500;
+line-height: 1;
+color: #000000;
+}
+.features-select {
+	margin-top: 50px;
+}
+.features-select legend{
+	font-size: 20px;
+	line-height: 1.8;
+    font-weight: 700;
+}
+.features-select2 {
+	margin-top: 50px;
+}
+.features-select2 legend{
+	font-size: 20px;
+	line-height: 1.8;
+	font-weight: 700;
+}
+.active-link::after {
+  content: "";
+  position: relative;
+  top:;
+  left: 0;
+
+  display: block;
+  width: 67px;
+  height: 2px;
+
+  background-color: #fb565a;
+}
+
+a.disabled {
+  cursor: default;
+
+  pointer-events: none;
 }
